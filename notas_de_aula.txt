@@ -1,0 +1,58 @@
+Sistema de Controle de versão
+
+1. git clone (é para fazer o download de um repositorio)
+git clone
+
+2. para entrar na main
+git checkout main
+
+3. para criar uma nova branch
+git checkout -b [nomedabranch]
+
+4. para ver o historico de commits
+git log --all -oneline
+para sair da tela do git log -p:  clicar na tecla ESC depois :q
+
+5.  para informar ao git que um arquivo deve ser monitorado para versionamentos, git add
+    o git add adiciona um arquivo para area de stage, local onde o versionamento é controlado.
+    obs. 1. fazer antes um git status para pegar a info do arquivo a versionar, e depois
+         2. git add. leva tudo da pasta para a area de stage, isto nao é boa politica 
+git add [nomedoarquivo]
+
+6. para retirar um arquivo da stage
+git restore --staged [nomedoarquivo]
+
+7. para commit um arquivo, ie, comprometer o comentario de versao
+git commit -m "criar arquivo de notas da aula de cultura devops"
+
+8. para saber que linhas foram alteradas, removidas, adicionadas
+git diff
+
+9. para descartar e desfazer alterações que estao no repositorio
+   ele devolver um arquivo versionado para area de stage
+git reset 
+
+10. para ver de onde veio a branch que utilizo
+git remote -v
+
+11.  para enviar as alterações da minha versão para a nuvem do github (upload)
+     podemos consultar o nome certinho do que subir para o github com git branch
+     o repositorio do iperoyg nao me permite fazer push
+git push -u 'origin' [nome da branch]
+
+
+
+RESUMO PARA EXERCICIO
+git add > git status > git commit
+adiciona algo na state, altera o arquivo, faz git status, depois commita.
+
+de working directory para stagin area  | git add
+de staging area para working directory | git restore 
+
+de stagin area para repository          | git commit
+de repository para staging area         | git reset para desfazer alterações
+
+
+cria um codigo
+define o que adicionar, alterar, deletar e manter
+commitar o codigo
