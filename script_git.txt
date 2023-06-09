@@ -2,8 +2,10 @@
 
 2. incluir o arquivo na stage
     git add script_git.sql
+    
 3. fazer o primeiro commit do arquivo 
     git commit script_git.sql "versao inicial"
+
 4. publicar a versao inicial na nuvem do github
     git push script_git.sql
 
