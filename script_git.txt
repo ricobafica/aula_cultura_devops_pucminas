@@ -1,0 +1,10 @@
+crio novo arquivo chamado script_git.sql
+2. incluir o arquivo na stage
+    git add script_git.sql
+3. fazer o primeiro commit do arquivo 
+    git commit script_git.sql "versao inicial"
+4. publicar a versao inicial na nuvem do github
+    git push script_git.sql
+
+crio uma nova versão do arquivo script_git.sql
+refaço o passo 2, o 3 e o 4
